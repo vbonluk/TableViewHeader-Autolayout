@@ -96,7 +96,7 @@
 ![](http://oapglm9vz.bkt.clouddn.com/1483003424.png )
 
 
-此文件已经上传到这里：<http://baidu.com>
+此文件已经上传到这里：<https://github.com/vbonluk/TableViewHeader-Autolayout>
 
 我们最好将此文件在基类import
 
@@ -141,7 +141,7 @@
 	
 ### 总结
 
-上面的文件已经开源到这里：<>
+上面的文件已经开源到这里：<https://github.com/vbonluk/TableViewHeader-Autolayout>
 
 通过上面的方法我们可以在布局HeaderView的时候放下frame的计算了。其实上面的方法可能还可以再次优化！只需一次赋值HeaderView就可以动态高度。我觉得可以通过run-time + KVO + layoutSubView的方法来实现。暂时没时间去研究，先放下。
 	
