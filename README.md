@@ -1,24 +1,10 @@
----
-
-layout: post
-title: "iOS: TableView HeaderView + AutoLayout"
-description: 
-headline: 
-modified: 2016-12-29
-category: iOS之路
-tags: []
-imagefeature: 
-comments: true
-mathjax: 
-
----
 
 
 ### 参考链接
 	
-	<http://stackoverflow.com/questions/16471846/is-it-possible-to-use-autolayout-with-uitableviews-tableheaderview>
+<http://stackoverflow.com/questions/16471846/is-it-possible-to-use-autolayout-with-uitableviews-tableheaderview>
 	
-	<http://stackoverflow.com/questions/20609206/setneedslayout-vs-setneedsupdateconstraints-and-layoutifneeded-vs-updateconstra>
+<http://stackoverflow.com/questions/20609206/setneedslayout-vs-setneedsupdateconstraints-and-layoutifneeded-vs-updateconstra>
 	
 ### 正文
 
