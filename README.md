@@ -149,6 +149,27 @@
 
 ![](http://oapglm9vz.bkt.clouddn.com/1483003691.png )
 
+# Update 更新
+
+通过上面的方法发现还有一点问题，就是在多行Label动态高度的时候systemLayoutSizeFittingSize方法算出的高度并不是准确的。
+
+![](http://oapglm9vz.bkt.clouddn.com/1483016354.png )
+
+这一点我们可以通过设置UILabel的preferredMaxLayoutWidth属性来进行修正。
+
+通常情况我们可以通过简单的遍历来给所有subViews的UILabel设置属性。
+
+	for (UIView *view in header.subviews) {
+        if ([view isKindOfClass:[UILabel class]]) {
+            UILabel *label = (UILabel *)view;
+            //不设置这个属性会导致算出来的高度不准。
+            label.preferredMaxLayoutWidth = label.frame.size.width;
+        }
+    }
+    
+但是，假如我们的HeaderView是比较复杂的多层view嵌套呢？不同层级下有UILabel呢？这时候，其实我们可以将HeaderView的SubViews看做是一个树(tree)型结构，也就是多叉树。我们可以通过多叉树的递归遍历来给每层View的Label设置属性。
+
+![](http://oapglm9vz.bkt.clouddn.com/1483016206.png )
 
 
 原创作品，欢迎转载，转载请声明出处：<http://www.真无聊.com>
