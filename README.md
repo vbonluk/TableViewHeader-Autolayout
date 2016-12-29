@@ -1,5 +1,7 @@
 
 
+## 多图请注意流量,如果图片显示不了请刷新页面。
+
 ### 参考链接
 	
 <http://stackoverflow.com/questions/16471846/is-it-possible-to-use-autolayout-with-uitableviews-tableheaderview>
